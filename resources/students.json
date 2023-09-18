@@ -1,7 +1,13 @@
+
+
 {
-  "dff9": {
+  "data": {
+    "uni": "dff9",
     "first_name": "Donald",
     "last_name": "Ferguson",
     "school": "SEAS"
-  }
+  },
+  "links": [
+    {"rel": "school", "href": "/api/schools/SEAS"}
+  ]
 }

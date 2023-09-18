@@ -17,7 +17,10 @@ async def root():
 
 @app.get("/hello/{name}")
 async def say_hello(name: str):
-    return {"message": f"Hello {name}"}
+    return {
+        "message": f"Hello {name}",
+        "Sender": "Donald Ferguson"
+    }
 
 
 @app.get("/hello_text/{name}")
@@ -34,4 +37,4 @@ async def get_students():
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8012)
+    uvicorn.run(app, host="0.0.0.0", port=8001)
