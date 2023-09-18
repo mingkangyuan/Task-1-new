@@ -7,11 +7,9 @@ class StudentsResource:
     # It is also pretty sloppy code.
     #
 
-    students_file = \
-        "/Users/donaldferguson/Dropbox/000-NewProjects/E6156F23/first_microservice/resources/students.json"
-
-    def __init__(self):
+    def __init__(self, student_file):
         self.students = None
+        self.students_file = student_file
 
         with open(self.students_file, "r") as j_file:
             self.students = json.load(j_file)

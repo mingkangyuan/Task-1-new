@@ -7,7 +7,7 @@ from resources.students import StudentsResource
 
 app = FastAPI()
 
-students_resource = StudentsResource()
+students_resource = StudentsResource("./resources/students.json")
 
 
 @app.get("/")
